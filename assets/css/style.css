@@ -14,22 +14,81 @@ body{
     'buscador comprar'
     'contenido contenido'
     'footer footer';
+    height: 100vh;
+    grid-template-rows: 15% 15% auto 12%;
+    grid-template-columns: 85% 15%;
+    color: rgb(44, 44, 44);
 }
 
-.nav{
+/*SECCION DE MENU DE NAVEGACION*/
+
+.navbar{
     grid-area: navegacion;
-
+    padding: 0.8rem 1rem;
+    
     border: 2px solid #ff9129;
 }
 
-.buscar{
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.logo > img{
+    width: 7rem;
+}
+
+.menu-burger{
+    font-size: 20px;
+    color: rgb(44, 44, 44);
+}
+
+menu {
+    display: none;
+}
+
+/*SECCION DE FILTROS DE BUSQUEDA*/
+
+
+.search-box{
     grid-area: buscador;
-
+    background-color: #ff84003a;
     border: 2px solid #ff9129;
+    text-align: center;
+    padding: 0.5rem;
 }
 
+input{
+    width: 90%;
+    border-radius: 5px;
+    padding: 0.3rem;
+    margin: 0.5rem 0rem 0rem;
+    border: 1px solid #FF8400;
+}
+
+fieldset{
+    border: none;
+}
+.contenedor-buscar > input{
+    width: 80%;
+}
+
+label{
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+/*SECCION DE COMPRAR*/
 .comprar{
     grid-template-areas: comprar;
+    background-color: #ff84003a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    color: #4d4d4d;
 
     border: 2px solid #ff9129;
 }

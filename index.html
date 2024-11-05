@@ -14,19 +14,16 @@
     <!--SECCION DE MENU DE NAVEGACION-->
 
     <!--Navbar-->
-    <section class="nav">
+    <section class="navbar">
 
         <nav>
-            <div>
-                <img src="" alt="">
-                <h4>Foodie Funny</h4>
+            <div class="logo">
+                <img src="./assets/img/Logo_1.png" alt="logo_white">
             </div>
             <div class="menu-burger">
                     <i class="fa-solid fa-bars"></i>
             </div>
         </nav>
-
-        
 
     <!--Opciones-->
         <aside>
@@ -41,22 +38,26 @@
 
     </section>
 
+
     <!--SECCION DE FILTROS DE BUSQUEDA-->
     <!--Buscador-->
-    <section class="buscar">
-        <label for="buscar">Buscar:</label>
-        <select name="buscar" id="carlist">
-            <option value="tipos">Sushi</option>
-            <option value="tipos">Hamburguesas</option>
-            <option value="tipos">Pizza</option>
-            <option value="tipos">Vegetariano</option>
-        </select>
+    <section class="search-box">
+        <label for="buscador">Busca tus preferencias:</label>
+        <form method="get" id="search-form" class="contenedor-buscar">
+           <fieldset>
+              <input type="text" id="search-input" placeholder="Buscar"  />
+              <i class="fa-solid fa-magnifying-glass"></i>
+           </fieldset>
+        </form>
     </section>
-
+    
+    <!--SECCION DE COMPRAR-->
+    <!--Carrito de compras-->
     <section class="comprar">
         <i class="fa-solid fa-cart-shopping"></i>
     </section>
 
+    
     <main>
         <section class="info-bg">
             <!--fondo del header-->
@@ -109,7 +110,7 @@
 
 
 
-
+    
 
 
 </body>
