@@ -22,20 +22,45 @@
             <div class="logo">
                 <img src="./assets/img/Logo_1.png" alt="logo_white">
             </div>
-            <div class="menu-burger">
-                <i class="fa-solid fa-bars"></i>
+            <div class="iconos-nav">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <i class="fa-solid fa-bars"></i>
             </div>
         </nav>
 
         <!--Opciones-->
         <aside>
             <menu>
-                <p>Sushi</p>
-                <p>Hamburguesas</p>
-                <p>Pizza</p>
-                <p>Vegetariano</p>
-                <p>Postres</p>
-            </menu>
+                <div class="titulo-nav">
+                    <a href="#sushi">
+                        <p>Sushi</p>
+                        <img src="./assets/img/sushi_.png" alt="sushi">
+                    </a>
+                </div>
+                <div class="titulo-nav">
+                    <a href="#hamburguesa">
+                        <p>Hamburguesas</p>
+                        <img src="./assets/img/hamburguesa_.png" alt="sushi">
+                    </a>
+                </div>
+                <div class="titulo-nav">
+                    <a href="#pizza">
+                        <p>Pizzas</p>
+                        <img src="./assets/img/pizza_.png" alt="sushi">
+                    </a>
+                </div>
+                <div class="titulo-nav">
+                    <a href="#vegetariano">
+                        <p>Vegetariano</p>
+                        <img src="./assets/img/ensalada_.png" alt="sushi">
+                    </a>
+                </div>
+                <div class="titulo-nav">
+                    <a href="#postres">
+                        <p>Postres</p>
+                        <img src="./assets/img/dona_.png" alt="sushi">
+                    </a>
+                </div>
         </aside>
 
     </section>
@@ -43,21 +68,15 @@
 
     <!--SECCION DE FILTROS DE BUSQUEDA-->
     <!--Buscador-->
-    <section class="opciones">
+    <section class="buscar">
         <section class="search-box">
             <label for="buscador">Busca tus preferencias:</label>
-            <form method="get" id="search-form" class="contenedor-buscar">
+            <form method="get" id="search-form">
                 <fieldset>
                     <input type="text" id="search-input" placeholder="Buscar" />
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </fieldset>
             </form>
-        </section>
-
-        <!--SECCION DE COMPRAR-->
-        <!--Carrito de compras-->
-        <section class="comprar">
-            <i class="fa-solid fa-cart-shopping"></i>
         </section>
     </section>
 
@@ -65,10 +84,10 @@
     <main>
         <section class="galeria">
             <!--SECCIONES DE LA COMIDA-->
-            <section class="sushi">
+            <section class="sushi" id="sushi">
                 <div class="titulo-contenedor">
                     <img src="./assets/img/sushi_.png" alt="sushi">
-                    <h1>Sushi</h1>
+                    <h2>Sushi</h2>
                 </div>
                 <!--Card-->
                 <div class="contenedor-cards">
@@ -78,7 +97,7 @@
                             <img src="./assets/img/sushi_1.jpg" alt="sushi">
                         </div>
                         <div class="text-card">
-                            <h3>"Sushi de Salmon"</h3>
+                            <h3>Sushi de Salmon</h3>
                             <p>Roll relleno de kanikama</p>
                             <p>Envuelto en salmon y panko</p>
                         </div>
@@ -90,7 +109,7 @@
                             <img src="./assets/img/sushi_2.jpg" alt="sushi">
                         </div>
                         <div class="text-card">
-                            <h3>"Nigiri de Atún"</h3>
+                            <h3>Nigiri de Atún</h3>
                             <p>Roll de arroz con capa de atún</p>
                             <p>Flameado y precocido</p>
                         </div>
@@ -102,7 +121,7 @@
                             <img src="./assets/img/sushi_3.jpg" alt="sushi">
                         </div>
                         <div class="text-card">
-                            <h3>"Avocado Maki"</h3>
+                            <h3>Avocado Maki</h3>
                             <p>Roll de arroz con palta</p>
                             <p>Envuelto en alga Nori</p>
                         </div>
@@ -114,7 +133,7 @@
                             <img src="./assets/img/sushi.jpg" alt="sushi">
                         </div>
                         <div class="text-card">
-                            <h4>Sushi de Salmon"</h4>
+                            <h3>Sushi de Salmon</h3>
                             <p>Roll de arroz con pollo y palta</p>
                             <p>Envuelto en salmon</p>
                         </div>
@@ -124,58 +143,58 @@
                 </div>
             </section>
 
-            <section class="hamburguesa">
+            <section class="hamburguesa" id="hamburguesa">
                 <div class="titulo-contenedor">
                     <img src="./assets/img/hamburguesa_.png" alt="hamburguesa">
-                    <h1>Hamburguesas</h1>
+                    <h2>Hamburguesas</h2>
                 </div>
                 <!--Card-->
                 <div class="contenedor-cards">
 
                     <div class="card">
                         <div class="img-card">
-                            <img src="./assets/img/sushi_1.jpg" alt="hamburguesa">
+                            <img src="./assets/img/hamburguesa.png" alt="hamburguesa">
                         </div>
                         <div class="text-card">
-                            <h3>"Sushi de Salmon"</h3>
-                            <p>Roll relleno de kanikama</p>
-                            <p>Envuelto en salmon y panko</p>
+                            <h3>Burgercheese</h3>
+                            <p>300g de carne con queso</p>
+                            <p>Con tocino y cebolla frita</p>
                         </div>
                         <button>Añadir al carrito</button>
                     </div>
 
                     <div class="card">
                         <div class="img-card">
-                            <img src="./assets/img/sushi_2.jpg" alt="hamburguesa">
+                            <img src="./assets/img/hamburguesa_1.png" alt="hamburguesa">
                         </div>
                         <div class="text-card">
-                            <h3>"Nigiri de Atún"</h3>
-                            <p>Roll de arroz con capa de atún</p>
-                            <p>Flameado y precocido</p>
+                            <h3>Pepiburger</h3>
+                            <p>300g de carne con queso</p>
+                            <p>Rellena de vegetales variados</p>
                         </div>
                         <button>Añadir al carrito</button>
                     </div>
 
                     <div class="card">
                         <div class="img-card">
-                            <img src="./assets/img/sushi_3.jpg" alt="hamburguesa">
+                            <img src="./assets/img/hamburguesa_2.png" alt="hamburguesa">
                         </div>
                         <div class="text-card">
-                            <h3>"Avocado Maki"</h3>
-                            <p>Roll de arroz con palta</p>
-                            <p>Envuelto en alga Nori</p>
+                            <h3>Burger Egg</h3>
+                            <p>300g de carne con huevo</p>
+                            <p>Acompañado de vegetales</p>
                         </div>
                         <button>Añadir al carrito</button>
                     </div>
 
                     <div class="card">
                         <div class="img-card">
-                            <img src="./assets/img/sushi.jpg" alt="hamburguesa">
+                            <img src="./assets/img/hamburguesa_3.png" alt="hamburguesa">
                         </div>
                         <div class="text-card">
-                            <h4>Sushi de Salmon"</h4>
-                            <p>Roll de arroz con pollo y palta</p>
-                            <p>Envuelto en salmon</p>
+                            <h3>Burguer Veggie</h3>
+                            <p>Hamburguesa de lenteja</p>
+                            <p>Acompañado de vegetales</p>
                         </div>
                         <button>Añadir al carrito</button>
                     </div>
@@ -183,58 +202,58 @@
                 </div>
             </section>
 
-            <section class="pizza">
+            <section class="pizza" id="pizza">
                 <div class="titulo-contenedor">
                     <img src="./assets/img/pizza_.png" alt="pizza">
-                    <h1>Pizzas</h1>
+                    <h2>Pizzas</h2>
                 </div>
                 <!--Card-->
                 <div class="contenedor-cards">
 
                     <div class="card">
                         <div class="img-card">
-                            <img src="./assets/img/sushi_1.jpg" alt="pizza">
+                            <img src="./assets/img/pizza_3.png" alt="pizza">
                         </div>
                         <div class="text-card">
-                            <h3>"Sushi de Salmon"</h3>
-                            <p>Roll relleno de kanikama</p>
-                            <p>Envuelto en salmon y panko</p>
+                            <h3>Todas las carnes</h3>
+                            <p>Variedad de 4 carnes</p>
+                            <p>Con: Aceituna y queso</p>
                         </div>
                         <button>Añadir al carrito</button>
                     </div>
 
                     <div class="card">
                         <div class="img-card">
-                            <img src="./assets/img/sushi_2.jpg" alt="pizza">
+                            <img src="./assets/img/pizza_1.png" alt="pizza">
                         </div>
                         <div class="text-card">
-                            <h3>"Nigiri de Atún"</h3>
-                            <p>Roll de arroz con capa de atún</p>
-                            <p>Flameado y precocido</p>
+                            <h3>Tomatolovers</h3>
+                            <p>Tomates rostizados y frescos</p>
+                            <p>Con: Queso y especias</p>
                         </div>
                         <button>Añadir al carrito</button>
                     </div>
 
                     <div class="card">
                         <div class="img-card">
-                            <img src="./assets/img/sushi_3.jpg" alt="pizza">
+                            <img src="./assets/img/pizza_2.png" alt="pizza">
                         </div>
                         <div class="text-card">
-                            <h3>"Avocado Maki"</h3>
-                            <p>Roll de arroz con palta</p>
-                            <p>Envuelto en alga Nori</p>
+                            <h3>Pizzaroni</h3>
+                            <p>Peperoni y albahaca</p>
+                            <p>Con: Queso y salsa de tomate</p>
                         </div>
                         <button>Añadir al carrito</button>
                     </div>
 
                     <div class="card">
                         <div class="img-card">
-                            <img src="./assets/img/sushi.jpg" alt="pizza">
+                            <img src="./assets/img/pizza.png" alt="pizza">
                         </div>
                         <div class="text-card">
-                            <h4>Sushi de Salmon"</h4>
-                            <p>Roll de arroz con pollo y palta</p>
-                            <p>Envuelto en salmon</p>
+                            <h3>La Favorita</h3>
+                            <p>Anchoas y aceitunas</p>
+                            <p>Con: Queso y salsa de tomate</p>
                         </div>
                         <button>Añadir al carrito</button>
                     </div>
@@ -242,58 +261,58 @@
                 </div>
             </section>
 
-            <section class="vegetariano">
+            <section class="vegetariano" id="vegetariano">
                 <div class="titulo-contenedor">
                     <img src="./assets/img/ensalada_.png" alt="vegetariano">
-                    <h1>Vegetariano</h1>
+                    <h2>Vegetariano</h2>
                 </div>
                 <!--Card-->
                 <div class="contenedor-cards">
 
                     <div class="card">
                         <div class="img-card">
-                            <img src="./assets/img/sushi_1.jpg" alt="vegetariano">
+                            <img src="./assets/img/vegetariano.png" alt="vegetariano">
                         </div>
                         <div class="text-card">
-                            <h3>"Sushi de Salmon"</h3>
-                            <p>Roll relleno de kanikama</p>
-                            <p>Envuelto en salmon y panko</p>
+                            <h3>Veggie Árabe</h3>
+                            <p>Falafel y brocoli</p>
+                            <p>Varias cocciones con especias</p>
                         </div>
                         <button>Añadir al carrito</button>
                     </div>
 
                     <div class="card">
                         <div class="img-card">
-                            <img src="./assets/img/sushi_2.jpg" alt="vegetariano">
+                            <img src="./assets/img/vegetariano_1.png" alt="vegetariano">
                         </div>
                         <div class="text-card">
-                            <h3>"Nigiri de Atún"</h3>
-                            <p>Roll de arroz con capa de atún</p>
-                            <p>Flameado y precocido</p>
+                            <h3>Veggie Salteado</h3>
+                            <p>Brocoli y Zanahoria</p>
+                            <p>Cocidos al vapor con especias</p>
                         </div>
                         <button>Añadir al carrito</button>
                     </div>
 
                     <div class="card">
                         <div class="img-card">
-                            <img src="./assets/img/sushi_3.jpg" alt="vegetariano">
+                            <img src="./assets/img/vegetariano_2.png" alt="vegetariano">
                         </div>
                         <div class="text-card">
-                            <h3>"Avocado Maki"</h3>
-                            <p>Roll de arroz con palta</p>
-                            <p>Envuelto en alga Nori</p>
+                            <h3>Veggie Avocado</h3>
+                            <p>Palta, brocoli y garbanzos</p>
+                            <p>Varias cocciones con especias</p>
                         </div>
                         <button>Añadir al carrito</button>
                     </div>
 
                     <div class="card">
                         <div class="img-card">
-                            <img src="./assets/img/sushi.jpg" alt="vegetariano">
+                            <img src="./assets/img/vegetariano_3.png" alt="vegetariano">
                         </div>
                         <div class="text-card">
-                            <h4>Sushi de Salmon"</h4>
-                            <p>Roll de arroz con pollo y palta</p>
-                            <p>Envuelto en salmon</p>
+                            <h3>Veggie Cocido</h3>
+                            <p>Zapallo, brocoli, y pimiento</p>
+                            <p>Salteado con especias</p>
                         </div>
                         <button>Añadir al carrito</button>
                     </div>
@@ -301,58 +320,58 @@
                 </div>
             </section>
            
-            <section class="postres">
+            <section class="postres" id="postres">
                 <div class="titulo-contenedor">
                     <img src="./assets/img/dona_.png" alt="postres">
-                    <h1>Postres</h1>
+                    <h2>Postres</h2>
                 </div>
                 <!--Card-->
                 <div class="contenedor-cards">
 
                     <div class="card">
                         <div class="img-card">
-                            <img src="./assets/img/sushi_1.jpg" alt="postres">
+                            <img src="./assets/img/postres.png" alt="postres">
                         </div>
                         <div class="text-card">
-                            <h3>"Sushi de Salmon"</h3>
-                            <p>Roll relleno de kanikama</p>
-                            <p>Envuelto en salmon y panko</p>
+                            <h3>Tartaleta de frutas</h3>
+                            <p>Frutos rojos frescas</p>
+                            <p>Crema pastelera liviana</p>
                         </div>
                         <button>Añadir al carrito</button>
                     </div>
 
                     <div class="card">
                         <div class="img-card">
-                            <img src="./assets/img/sushi_2.jpg" alt="postres">
+                            <img src="./assets/img/postres_1.png" alt="postres">
                         </div>
                         <div class="text-card">
-                            <h3>"Nigiri de Atún"</h3>
-                            <p>Roll de arroz con capa de atún</p>
-                            <p>Flameado y precocido</p>
+                            <h3>Flan citrico</h3>
+                            <p>Con chocolate y naranja</p>
+                            <p>Esencia de vainilla</p>
                         </div>
                         <button>Añadir al carrito</button>
                     </div>
 
                     <div class="card">
                         <div class="img-card">
-                            <img src="./assets/img/sushi_3.jpg" alt="postres">
+                            <img src="./assets/img/postres_2.png" alt="postres">
                         </div>
                         <div class="text-card">
-                            <h3>"Avocado Maki"</h3>
-                            <p>Roll de arroz con palta</p>
-                            <p>Envuelto en alga Nori</p>
+                            <h3>Brownie con helado</h3>
+                            <p>Helado de vainilla</p>
+                            <p>Cake de chocolate caliente</p>
                         </div>
                         <button>Añadir al carrito</button>
                     </div>
 
                     <div class="card">
                         <div class="img-card">
-                            <img src="./assets/img/sushi.jpg" alt="postres">
+                            <img src="./assets/img/postres_3.png" alt="postres">
                         </div>
                         <div class="text-card">
-                            <h4>Sushi de Salmon"</h4>
-                            <p>Roll de arroz con pollo y palta</p>
-                            <p>Envuelto en salmon</p>
+                            <h3>Postre fit/frio</h3>
+                            <p>Yogurt y mermelada natural</p>
+                            <p>Frutros rojos frescos</p>
                         </div>
                         <button>Añadir al carrito</button>
                     </div>
@@ -378,8 +397,8 @@
             Siguenos en todas nuestras redes sociales
         </div>
         <div class="iconos-footer">
-            <i class="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-instagram"></i>
+            <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
         </div>
         <div class="text-footer">
             Todos los derechos reservados
