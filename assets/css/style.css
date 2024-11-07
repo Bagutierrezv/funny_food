@@ -10,13 +10,12 @@
 body{
     display: grid;
     grid-template-areas:
-    'navegacion navegacion'
-    'buscador comprar'
-    'contenido contenido'
-    'footer footer';
+    'navegacion'
+    'opciones'
+    'contenido'
+    'footer';
     height: 100vh;
-    grid-template-rows: 15% 15% auto 12%;
-    grid-template-columns: 85% 15%;
+    grid-template-rows: 10% 10% 68% 12%;
     color: rgb(44, 44, 44);
 }
 
@@ -24,9 +23,10 @@ body{
 
 .navbar{
     grid-area: navegacion;
+    background-color: #f3f3f3;
     padding: 0.8rem 1rem;
-    
-    border: 2px solid #ff9129;
+
+    /*border: 2px solid #ff9129;*/
 }
 
 nav{
@@ -49,15 +49,24 @@ menu {
     display: none;
 }
 
-/*SECCION DE FILTROS DE BUSQUEDA*/
+/*SECCION DE FILTROS DE BUSQUEDA y compras*/
 
+.opciones{
+    grid-area: opciones;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff5b9;
+    
+
+}
 
 .search-box{
-    grid-area: buscador;
-    background-color: #ff84003a;
-    border: 2px solid #ff9129;
+    width: 85%;
     text-align: center;
     padding: 0.5rem;
+
+    /*border: 2px solid #ff9129;*/
 }
 
 input{
@@ -65,7 +74,9 @@ input{
     border-radius: 5px;
     padding: 0.3rem;
     margin: 0.5rem 0rem 0rem;
-    border: 1px solid #FF8400;
+    border: none;
+
+    /*border: 1px solid #FF8400;*/
 }
 
 fieldset{
@@ -80,27 +91,134 @@ label{
     font-weight: 600;
 }
 
-/*SECCION DE COMPRAR*/
 .comprar{
-    grid-template-areas: comprar;
-    background-color: #ff84003a;
+    width: 15%;
+    text-align: center;
+
+    /*border: 2px solid #ff9129;*/
+}
+
+/*SECCION DE GALERIA Y COMIDA*/
+main{
+    grid-area: contenido;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+    
+    /*border: 2px solid #ff9129;*/
+}
+
+.galeria{
+    height: 100%;
+}
+
+.titulo-contenedor {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.5rem;
-    color: #4d4d4d;
-
-    border: 2px solid #ff9129;
+    margin: 1rem 0rem;
 }
 
-main{
-    grid-area: contenido;
-
-    border: 2px solid #ff9129;
+.titulo-contenedor > img {
+    width: 3rem;
 }
 
+.sushi{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hamburguesa{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pizza{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.postres{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.vegetariano{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    background-color: #f3f3f3;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0.5rem;
+    width: auto;
+    border: 1px solid #adadad;
+}
+
+.img-card > img{
+    width: 12rem;
+    height: 10rem;
+}
+
+.text-card {
+    padding: 0.1rem;
+    color: #474747;
+    text-align: center;
+}
+
+.text-card > h3 {
+    padding-top: 0.1rem;
+}
+
+.text-card > p{
+    padding: 0.3rem;
+}
+
+.contenedor-cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 21rem;
+    overflow-y: scroll;
+    margin-left: 1rem;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+button{
+    margin: 0.5rem;
+    padding: 0.5rem 2rem;
+    border: none;
+    background-color:#ff9129;
+    color: #ffffff;
+    border-radius: 10px;
+}
+
+/*SECCION FOOTER*/
 footer{
     grid-area: footer;
 
-    border: 2px solid #ff9129;
+    /*border: 2px solid #ff9129;*/
 }
